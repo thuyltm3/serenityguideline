@@ -7,7 +7,7 @@ Feature: Allow users to login to quang cao coc coc website
     Then Should navigate to home page site
     Examples:
       |email|password|
-      |ledinhcuong99@gmail.com|FernandoTorres12345#|
+      |xxxxxxxxxx|xxxxxxxxxx|
 
   @Login
   Scenario Outline: Login failed with invalid email
