@@ -16,5 +16,7 @@ public class CoreConstant {
     public static final String GAMELIST_HOST = conf.getString("localhost.url");
     public static final String GAMELIST_API = conf.getString("gamelist.api");
 
+    public static final String QC_COCCOC_URL_LOGIN = conf.getString("qcCocCoc.url");
+
 
 }
