@@ -4,7 +4,6 @@ import net.serenitybdd.junit.runners.SerenityRunner;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.thucydides.core.annotations.Managed;
-import net.thucydides.core.annotations.Steps;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -22,11 +21,11 @@ public class LoginPage {
 
 
     @Managed(uniqueSession = true)
-    private WebDriver herBrowser;
+    private WebDriver hisBrowser;
 
     @Before
     public void annaCanBrowseTheWeb() {
-        donald.can(BrowseTheWeb.with(herBrowser));
+        donald.can(BrowseTheWeb.with(hisBrowser));
     }
 
     @Test

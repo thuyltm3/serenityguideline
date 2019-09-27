@@ -4,6 +4,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.SendKeys;
+import net.thucydides.core.annotations.Step;
 import screenplay.qcCocCoc.user_interface.LoginPageElements;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
@@ -13,6 +14,7 @@ public class Login implements Task {
     private final String email_text;
     private final String password_text;
 
+    @Step("{0} Login with email '#email_text' and password '#password_text'")
     @Override
     public <T extends Actor> void performAs(T actor) {
 
