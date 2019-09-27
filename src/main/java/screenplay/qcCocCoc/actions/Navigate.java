@@ -1,9 +1,9 @@
-package screenplay.qcCocCoc.tasks;
+package screenplay.qcCocCoc.actions;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.actions.Open;
-import screenplay.qcCocCoc.user_interface.ApplicationHomePage;
+import screenplay.qcCocCoc.user_interface.LoginPage;
 
 public class Navigate implements Performable {
 
@@ -15,7 +15,7 @@ public class Navigate implements Performable {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Open.browserOn().the(ApplicationHomePage.class)
+                Open.browserOn().the(LoginPage.class)
         );
 
     }

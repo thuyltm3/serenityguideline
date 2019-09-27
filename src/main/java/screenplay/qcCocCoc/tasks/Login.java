@@ -5,6 +5,7 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.SendKeys;
 import net.thucydides.core.annotations.Step;
+import screenplay.qcCocCoc.actions.Navigate;
 import screenplay.qcCocCoc.user_interface.LoginPageElements;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
