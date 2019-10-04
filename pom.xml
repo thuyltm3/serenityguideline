@@ -111,6 +111,7 @@
             <version>0.2</version>
             <scope>compile</scope>
         </dependency>
+
         <!-- https://mvnrepository.com/artifact/net.serenity-bdd/serenity-screenplay -->
         <dependency>
             <groupId>net.serenity-bdd</groupId>
@@ -134,6 +135,13 @@
             <groupId>org.jooq</groupId>
             <artifactId>jool</artifactId>
             <version>0.9.14</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.0.0</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
