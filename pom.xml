@@ -27,6 +27,11 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.0</version>
                 <configuration>
+                    <forkCount>5</forkCount>
+                    <reuseForks>true</reuseForks>
+                    <includes>
+                        <include>**/*IT.class</include>
+                    </includes>
                     <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
             </plugin>
@@ -34,12 +39,8 @@
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>2.18</version>
                 <configuration>
-                    <includes>
-                        <include>**/features/**/When*.java</include>
-                    </includes>
-                    <systemProperties>
-                        <webdriver.driver>${webdriver.driver}</webdriver.driver>
-                    </systemProperties>
+                    <parallel>classes</parallel>
+                    <threadCount>2</threadCount>
                 </configuration>
             </plugin>
             <plugin>
@@ -53,6 +54,28 @@
                         <goals>
                             <goal>aggregate</goal>
                         </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>com.github.temyers</groupId>
+                <artifactId>cucumber-jvm-parallel-plugin</artifactId>
+                <version>4.2.0</version>
+                <executions>
+                    <execution>
+                        <id>generateRunners</id>
+                        <phase>generate-test-sources</phase>
+                        <goals>
+                            <goal>generateRunners</goal>
+                        </goals>
+                        <configuration>
+                            <!-- Mandatory -->
+                            <!-- List of package names to scan for glue code. -->
+                            <glue>
+                                <package>ui.cucumber</package>
+                            </glue>
+                            <parallelScheme>FEATURE</parallelScheme>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>

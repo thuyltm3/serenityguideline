@@ -7,9 +7,9 @@ Feature: Allow users to login to quang cao coc coc website
     Then Should navigate to home page site
     Examples:
       |email|password|
-      |xxxxxxxxxx|xxxxxxxxxx|
+      |xxxxx|xxxxx|
 
-  @Login
+  @pending
   Scenario Outline: Login failed with invalid email
     Given Navigate to quang cao coc coc login site
     When Login with '<email>' and '<password>'
