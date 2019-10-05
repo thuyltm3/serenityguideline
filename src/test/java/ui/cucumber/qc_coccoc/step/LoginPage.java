@@ -18,14 +18,10 @@ public class LoginPage extends BaseTest {
     @Steps
     private pages.qcCocCoc.LoginPage loginPage_pageobject;
 
-//    @Managed
-//    WebDriver browser;
 
     @cucumber.api.java.en.Given("^Navigate to quang cao coc coc login site$")
     public void navigateToQuangCaoCocCocLoginSite() {
 
-
-//        browser.get(CoreConstant.QC_COCCOC_URL_LOGIN);
         loginPage_pageobject.open();
 
     }
@@ -50,7 +46,6 @@ public class LoginPage extends BaseTest {
 
         softAssertImpl.assertThat("Verify message error",loginPage_pageobject.getMessageError().contains(errorMessage),true);
         softAssertImpl.assertAll();
-
 
     }
 }

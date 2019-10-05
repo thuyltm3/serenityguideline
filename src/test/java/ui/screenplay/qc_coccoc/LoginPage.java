@@ -31,8 +31,8 @@ public class LoginPage {
     @Test
     public void login_with_correct_credential() {
 
-        givenThat(donald).wasAbleTo(Login.loginThePage("ledinhcuong99@gmail.com",
-                "Automationzone1990#"));
+        givenThat(donald).wasAbleTo(Login.loginThePage("xxxxx",
+                "xxxx"));
         then(donald).should(seeThat(CurrentUrl.information(),containsString("welcome")));
     }
 
