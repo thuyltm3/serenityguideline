@@ -121,6 +121,12 @@
             <artifactId>serenity-junit</artifactId>
             <version>${serenity.maven.version}</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.9</version>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/net.serenity-bdd/serenity-ensure -->
         <dependency>
             <groupId>net.serenity-bdd</groupId>

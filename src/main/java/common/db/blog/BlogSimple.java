@@ -21,4 +21,11 @@ public class BlogSimple extends Blog {
         base.queryNoReturn(blogDbConnect.getSession(), query);
     }
 
+    public void clearBlogByTitle(String title){
+
+        String query = String.format("delete from blog where title = '%s'", title);
+        base.queryNoReturn(blogDbConnect.getSession(), query);
+
+    }
+
 }
