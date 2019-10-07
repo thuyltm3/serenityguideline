@@ -14,7 +14,6 @@ public class CreateNewGameTest extends BaseTest {
 
     private CreateNewGameApi createNewGame = new CreateNewGameApi();
     private Game gameInput = new Game();
-    private BlogSimple blogSimple = new BlogSimple();
 
     @Test
     public void test_create_game_success(){
@@ -30,12 +29,6 @@ public class CreateNewGameTest extends BaseTest {
 
     }
 
-    @Test
-    public void test_connect_db() throws Exception {
-        List<Map<String, Object>> dbResult = blogSimple.getAllUserInfo();
-        System.out.println(dbResult.get(0).get("username").toString());
 
-
-    }
 
 }

@@ -15,9 +15,9 @@ public class BlogSimple extends Blog {
         return base.executeQuery(blogDbConnect.getSession(), query);
     }
 
-    public void clearDataCreateProfile(String email) {
+    public void clearUserInfoByUsername(String username) {
 
-        String query = String.format("delete TCBS_USER_OPENACCOUNT_QUEUE where EMAIL = '%s'", email);
+        String query = String.format("delete from user_info where username = '%s'", username);
         base.queryNoReturn(blogDbConnect.getSession(), query);
     }
 
