@@ -1,10 +1,14 @@
 package api.gamelist.junit;
 
 import common.BaseTest;
+import common.db.blog.BlogSimple;
 import features.api.gamelist.CreateNewGameApi;
 import io.restassured.response.Response;
 import models.features.gamelist.Game;
 import org.junit.Test;
+
+import java.util.List;
+import java.util.Map;
 
 public class CreateNewGameTest extends BaseTest {
 
@@ -24,5 +28,7 @@ public class CreateNewGameTest extends BaseTest {
         response.prettyPrint();
 
     }
+
+
 
 }
