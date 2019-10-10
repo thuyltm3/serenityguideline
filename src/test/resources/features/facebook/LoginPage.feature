@@ -7,4 +7,4 @@ Feature: Allow users to login facebook site
     Then Should navigate to facebook homepage
     Examples:
       |phone|password|
-      |xxxxx|xxxxx|
+      |0838069260|cuong1990|

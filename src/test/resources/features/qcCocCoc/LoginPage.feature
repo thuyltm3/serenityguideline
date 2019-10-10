@@ -7,7 +7,7 @@ Feature: Allow users to login to quang cao coc coc website
     Then Should navigate to home page site
     Examples:
       |email|password|
-      |xxxxx|xxxxx|
+      |ledinhcuong99@gmail.com|Test11011990|
 
   @pending
   Scenario Outline: Login failed with invalid email
@@ -16,4 +16,4 @@ Feature: Allow users to login to quang cao coc coc website
     Then Should prompt with '<errormessage>'
     Examples:
       |email|password|errormessage|
-      |a|FernandoTorres12345#|abc@example.com|
+      |ledinhcuong99@gmail.com|aaa|abc@example.com|
