@@ -4,11 +4,14 @@ import common.BaseTest;
 import common.db.blog.BlogSimple;
 import features.api.blog.UserInfo;
 import io.restassured.response.Response;
+import net.serenitybdd.junit.runners.SerenityRunner;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
 import java.util.List;
 import java.util.Map;
 
+@RunWith(SerenityRunner.class)
 public class UserInfoTest extends BaseTest {
 
     private UserInfo userInfoApi = new UserInfo();
