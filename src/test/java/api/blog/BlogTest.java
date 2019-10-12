@@ -7,9 +7,12 @@ import features.api.blog.UserInfo;
 import io.restassured.response.Response;
 import models.features.blog.Blog;
 import models.features.blog.Token;
+import net.serenitybdd.junit.runners.SerenityRunner;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
+@RunWith(SerenityRunner.class)
 public class BlogTest extends BaseTest {
 
     private Authen authenApi = new Authen();
